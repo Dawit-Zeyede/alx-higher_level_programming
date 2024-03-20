@@ -4,4 +4,4 @@ def number_keys(a_dictionary):
     lis = list(a_dictionary.keys())
     for i in lis:
         num += 1
-    reutrn (num)
+    return (num)

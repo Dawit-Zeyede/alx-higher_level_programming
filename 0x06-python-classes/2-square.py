@@ -1,8 +1,10 @@
 #!/usr/bin/python3
 """Class: Square"""
 
+
 class Square:
     """Class: square body"""
+    
     def __init__(self, size=0):
         """Square defined:
         Args:

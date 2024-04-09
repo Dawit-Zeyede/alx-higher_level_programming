@@ -1,41 +1,43 @@
 #!/usr/bin/python3
-"""Class: Rectangel"""
+"""Module 7-rectangle
+"""
 
 
 class Rectangle:
-    """class: Rectangel defiation. """
+    """Rectangle class defination.
+    """
 
-    instances = 0
-    symbo = '#'
+    number_of_instances = 0
+    print_symbol = '#'
 
     def __init__(self, width=0, height=0):
-        """Initializes a Rectangle instannce in a contructor.
+        """Initializes a Rectangle instance in a contructor.
         """
         self.width = width
         self.height = height
-        Rectangle.instances += 1
+        Rectangle.number_of_instances += 1
 
     def __str__(self):
-        """Returns string representation of rectangle (#)
+        """Returns an informal string representation
         """
         if self.__height == 0 or self.__width == 0:
             return ''
-        new_str = ''
+        rectangle_str = ''
         for i in range(self.__height):
             for j in range(self.__width):
-                new_str += str(self.symbo)
-            new_str += '\n'
-        return new_str[:-1]
+                rectangle_str += str(self.print_symbol)
+            rectangle_str += '\n'
+        return rectangle_str[:-1]
 
     def __repr__(self):
-        """Return internal string representation of a Rectangle instance
+        """Return internal string representation
         """
         return "Rectangle({}, {})".format(self.__width, self.__height)
 
     def __del__(self):
-        """Trigger when a rectangle is destroyed"""
+        """Fire when a rectangle instance is destroyed."""
         print("Bye rectangle...")
-        Rectangle.instances -= 1
+        Rectangle.number_of_instances -= 1
 
     @property
     def width(self):

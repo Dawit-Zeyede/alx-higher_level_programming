@@ -3,6 +3,8 @@
 Class: Rectangle
 """
 
+
 class Rectangle:
     """Class: Rectangle body."""
+
     pass

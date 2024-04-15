@@ -10,17 +10,17 @@ MyList = __import__('1-my_list').MyList
 
 # Test Case 1: Common case
 >>> my_list = MyList()
->>> my_list.append(1)
->>> my_list.append(4)
->>> my_list.append(2)
->>> my_list.append(3)
->>> my_list.append(5)
+>>> my_list.append(10)
+>>> my_list.append(40)
+>>> my_list.append(20)
+>>> my_list.append(30)
+>>> my_list.append(50)
 >>> print(my_list)
-[1, 4, 2, 3, 5]
+[10, 40, 20, 30, 50]
 >>> my_list.print_sorted()
-[1, 2, 3, 4, 5]
+[10, 20, 30, 40, 50]
 >>> print(my_list)
-[1, 4, 2, 3, 5]
+[10, 40, 20, 30, 50]
 
 # Test Case 2: Not defined object
 >>> MyList = __import__('1-my_list').MyList
@@ -30,10 +30,10 @@ Traceback (most recent call last):
 NameError: name 'my_list2' is not defined
 
 # Test Case 3: Passed a list
->>> a = [1, 9, 4]
+>>> a = [15, 95, 45]
 >>> my_list = MyList(a)
 >>> my_list.print_sorted()
-[1, 4, 9]
+[15, 45, 95]
 
 # Test Case 4: Empty list
 >>> a = []
@@ -43,28 +43,29 @@ NameError: name 'my_list2' is not defined
 
 # Test Case 5: Unique number
 >>> my_list = MyList()
->>> my_list.append(1)
+>>> my_list.append(12)
 >>> my_list.print_sorted()
-[1]
+[12]
 >>> print(my_list)
-[1]
+[12]
 
 # Test Case 6: Same number
 >>> my_list2 = MyList()
->>> my_list2.append(1)
->>> my_list2.append(1)
->>> my_list2.append(1)
->>> my_list2.append(1)
+>>> my_list2.append(7)
+>>> my_list2.append(7)
+>>> my_list2.append(7)
+>>> my_list2.append(7)
 >>> my_list2.print_sorted()
-[1, 1, 1, 1]
+[7, 7, 7, 7]
 
 # Test Case 7: Negative numbers
 >>> MyList = __import__('1-my_list').MyList
 >>> my_list = MyList()
 >>> my_list.append(5)
->>> my_list.append(1)
->>> my_list.append(-1)
->>> my_list.append(51)
->>> my_list.append(-5)
+>>> my_list.append(10)
+>>> my_list.append(-20)
+>>> my_list.append(55)
+>>> my_list.append(-50)
 >>> my_list.print_sorted()
-[-5, -1, 1, 5, 51]
+[-50, -20, 5, 10, 55]
+

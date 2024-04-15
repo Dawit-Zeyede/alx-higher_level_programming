@@ -23,17 +23,7 @@ case 1: common case
 >>>
 
 
-case 2: not defined object
-
->>> MyList = __import__('1-my_list').MyList
->>> my_list2.print_sorted()
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-NameError: name 'my_list2' is not defined
->>>
-
-
-case 3: passed a list
+case 2: passed a list
 
 >>> a = [1, 9, 4]
 >>> my_list = MyList(a)
@@ -42,7 +32,7 @@ case 3: passed a list
 >>>
 
 
-case 4: empty list
+case 3: empty list
 
 >>> a = []
 >>> my_list = MyList(a)
@@ -51,7 +41,7 @@ case 4: empty list
 >>>
 
 
-case 5: unique number
+case 4: unique number
 
 >>> my_list = MyList()
 >>> my_list.append(1)
@@ -59,6 +49,20 @@ case 5: unique number
 [1]
 >>> print(my_list)
 [1]
+>>>
+
+
+case 5: negative numbers
+
+>>> MyList = __import__('1-my_list').MyList
+>>> my_list = MyList()
+>>> my_list.append(5)
+>>> my_list.append(1)
+>>> my_list.append(-1)
+>>> my_list.append(51)
+>>> my_list.append(-5)
+>>> my_list.print_sorted()
+[-5, -1, 1, 5, 51]
 >>>
 
 
@@ -74,15 +78,11 @@ case 6: same number
 >>>
 
 
-case 7: negative numbers
+case 7: not defined object
 
 >>> MyList = __import__('1-my_list').MyList
->>> my_list = MyList()
->>> my_list.append(5)
->>> my_list.append(1)
->>> my_list.append(-1)
->>> my_list.append(51)
->>> my_list.append(-5)
->>> my_list.print_sorted()
-[-5, -1, 1, 5, 51]
+>>> my_list2.print_sorted()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'my_list2' is not defined
 >>>

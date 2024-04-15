@@ -8,6 +8,9 @@ BaseGeometry = __import__('7-base_geometry').BaseGeometry
 # Create an instance of BaseGeometry
 bg = BaseGeometry()
 
+# Test Case 0: Import
+>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
 # Test Case 1: Valid integer
 >>> bg.integer_validator("my_int", 12)
 

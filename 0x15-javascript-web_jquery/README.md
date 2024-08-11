@@ -1,0 +1,1 @@
+JavaScript Query stage allows you to write custom processing logic using JavaScript to manipulate search requests and responses. The first time that the pipeline is run, Fusion compiles the JavaScript program into Java bytecode using the JDK's JavaScript engine.
